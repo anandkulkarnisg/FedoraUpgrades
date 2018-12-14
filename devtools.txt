@@ -1,0 +1,32 @@
+dnf install valgrind
+dnf install valgrind.i686
+
+# svn tools and client.
+dnf install svn
+dnf install mod_dav_svn
+
+# git packages.
+dnf install github
+
+# rlwrap utility.
+dnf install rlwrap
+
+# Install strace package for tracing system calls in a given processs.
+dnf install strace
+
+# GUI client for the git repository
+dnf install gitg
+
+# Install gradle build tool.
+dnf install gradle
+
+# Install the ElectricFence memory check tool.
+dnf install ElectricFence
+dnf debuginfo-install ElectricFence
+
+# Install scons build tool [ backed by python it seems ].
+dnf install scons
+
+# install vim and gvim.
+dnf install vim gvim
+

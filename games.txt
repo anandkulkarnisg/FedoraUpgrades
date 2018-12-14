@@ -1,0 +1,4 @@
+# Gaming related repo of Fedora.
+dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo
+dnf install steam
+dnf install kblocks

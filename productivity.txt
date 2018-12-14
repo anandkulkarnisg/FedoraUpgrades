@@ -1,0 +1,119 @@
+dnf install @xfce-desktop
+dnf install @kde-desktop
+dnf install xpdf
+dnf install qbittorrent
+dnf install terminator
+dnf install gnome-tweak
+dnf install gnome-tweak-tool
+
+# lsb and are needed by google chrome browser.
+dnf install lsb
+dnf install libXScrnSaver
+dnf install liberation-fonts
+dnf install libappindicator-gtk3
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+rpm -ivh google-chrome-stable_current_x86_64.rpm
+
+# Adobe reader.
+wget http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.rpm
+dnf install atk.i686 pangox-compat pangox-compat.i686 gdk-pixbuf2.i686 gtk2.i686 libidn.i686 libXt.i686 gdk-pixbuf2-xlib gdk-pixbuf2-xlib.i686 mesa-libGLU mesa-libGLU.i686
+dnf localinstall AdbeRdr9.5.5-1_i486linux_enu.rpm
+dnf install libcanberra-gtk2.i686 adwaita-gtk2-theme.i686 PackageKit-gtk3-module.i686
+
+# manage and transform pdf files.
+dnf install pdfmod
+
+# Adobe Flash player plugin for browsers.
+rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+dnf install flash-plugin
+
+# opera browser.
+rpm -ivh opera-12.16-1860.x86_64.rpm
+
+# Install dosbox for good old video games.
+dnf install dosbox
+
+# Install livecd and image handling utilities.
+dnf install livecd-tools
+dnf install liveusb-creator
+
+# Install glade package and switchdesk GUI.
+dnf install glade
+dnf install glade3
+dnf install  pygtk2-libglade
+dnf install switchdesk
+dnf install switchdesk-gui
+
+# Install alien package for other formats to rpm conversion.
+dnf install alien
+
+# Install the terminal emulator.
+dnf copr enable heikoada/terminix
+sudo dnf install terminix
+
+# Install the LilyTerm emulator.
+dnf install lilyterm
+
+# chromium browser.
+dnf install chromium
+
+#http://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/
+dnf install shellinabox
+
+# Install ROXTerm
+dnf install roxterm
+
+# Install GUI FTP Client.
+dnf install gftp
+
+# Install the firefox plugin that enables ssh terminal in a tab.
+
+# Install the mediaWiki to build you own local wiki.
+dnf install mediawiki
+
+# Install the wikimedia related packages.
+dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl
+dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl
+dnf install bison
+dnf install mariadb
+dnf install mailcap
+dnf install mysql-server
+dnf install mysql
+dnf install php-mysqlnd
+dnf install -y mod_ssl
+
+# Spotify
+dnf install spotify-client
+
+# Install the pidgin
+dnf install pidgin
+
+# Install the VirtualBox software.
+dnf install VirtualBox
+
+# Install keepassx
+dnf install keepassx
+
+# stopwatch utility.
+dnf install sugar-stopwatch
+
+# News server client for GNOME desktop.
+dnf install pan
+
+# Install 7zip for Linux.
+dnf install p7zip
+
+# Install the mozilla plugin for the grammly [ spell checker unpaid free version ].
+
+# Install the pdf shuffler tool for editing and sorting out PDF files.
+dnf install pdfshuffler
+
+# Install shutter to take good quality screenshots.
+dnf install shutter
+
+# FileZilla utility.
+dnf install filezilla
+
+# Install the tools required for the disk management. gparted.
+dnf install gparted-0.27.0-1.fc24.x86_64
