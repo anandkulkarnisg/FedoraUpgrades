@@ -30,3 +30,6 @@ dnf install scons
 # install vim and gvim.
 dnf install vim gvim
 
+# Install emacs for Linux.
+dnf install emacs
+

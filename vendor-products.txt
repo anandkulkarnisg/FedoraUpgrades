@@ -1,1 +1,40 @@
-clion, hana, etc.
+mkdir -p /opt/jetbrains/ [ as root ].
+
+/ --------------------------------------------------------------------- /
+# Installation of clion C++ IDE.
+
+mkdir -p /opt/jetbrains/clion/
+cp clion-2018.3.1.tar.gz /opt/jetbrains/clion/
+cd /opt/jetbrains/clion/
+tar -xvzf clion-2018.3.1.tar.gz
+rm -f clion-2018.3.1.tar.gz
+cd clion-2018.3.1
+cd bin
+./clion.sh [ run as non root to install ].
+
+/ --------------------------------------------------------------------- /
+# Installation of jet brains Java development IDE intelliJ.
+
+mkdir -p /opt/jetbrains/intellij/
+cp idea-IU-183.4588.61.tar.gz /opt/jetbrains/intellij/
+tar -xvzf idea-IU-183.4588.61.tar.gz
+rm -f idea-IU-183.4588.61.tar.gz
+cd idea-IU-183.4588.61
+cd bin
+./idea.sh [ non root run and install ].
+
+/ --------------------------------------------------------------------- /
+# Installation python development IDE , pycharm.
+mkdir -p /opt/jetbrains/pycharm/
+cp pycharm-2018.3.1.tar.gz /opt/jetbrains/pycharm/
+cd /opt/jetbrains/pycharm
+tar -xvzf pycharm-2018.3.1.tar.gz
+rm -f pycharm-2018.3.1.tar.gz
+cd pycharm-2018.3.1
+cd bin
+./pycharm.sh [ non root run and install ].
+/ --------------------------------------------------------------------- /
+
+# Installation of dot net core for Linux Latest.
+[ TODO  ]
+

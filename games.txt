@@ -1,4 +1,8 @@
 # Gaming related repo of Fedora.
+
+dnf install kblocks
+dnf install tuxpaint 
+
 dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo
 dnf install steam
-dnf install kblocks
+

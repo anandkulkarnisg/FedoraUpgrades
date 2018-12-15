@@ -3,7 +3,6 @@ dnf install @kde-desktop
 dnf install xpdf
 dnf install qbittorrent
 dnf install terminator
-dnf install gnome-tweak
 dnf install gnome-tweak-tool
 
 # lsb and are needed by google chrome browser.
@@ -69,7 +68,7 @@ dnf install gftp
 
 # Install the firefox plugin that enables ssh terminal in a tab.
 
-# Install the mediaWiki to build you own local wiki.
+# Install the mediaWiki to build you own local wiki. [ TODO ]
 dnf install mediawiki
 
 # Install the wikimedia related packages.
@@ -84,6 +83,8 @@ dnf install php-mysqlnd
 dnf install -y mod_ssl
 
 # Spotify
+# https://negativo17.org/spotify-client/
+dnf config-manager --add-repo=https://negativo17.org/repos/fedora-spotify.repo
 dnf install spotify-client
 
 # Install the pidgin
