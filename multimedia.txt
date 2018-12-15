@@ -2,6 +2,16 @@
 dnf install brasero
 
 # Install xmms mp3 player.
+
+rpm -ivh https://rpmfind.net/linux/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/glib-1.2.10-52.fc28.i686.rpm
+rpm -ivh https://rpmfind.net/linux/fedora/linux/releases/28/Everything/x86_64/os/Packages/g/gtk+-1.2.10-88.fc28.i686.rpm
+rpm -ivh https://rpmfind.net/linux/fedora/linux/releases/28/Everything/x86_64/os/Packages/l/libmikmod-3.3.11.1-3.fc28.i686.rpm
+rpm -ivh https://rpmfind.net/linux/fedora/linux/releases/28/Everything/x86_64/os/Packages/x/xmms-libs-1.2.11-34.20071117cvs.fc28.i686.rpm
+dnf install mplayer
+dnf install xmms
+http://li.nux.ro/download/nux/dextop/el7/x86_64//xmms-skins-1.2.10-28.noarch.rpm
+
+[ deprecated below ].
 dnf install xmms
 rpm -ivh install ftp://195.220.108.108/linux/fedora/linux/releases/23/Everything/armhfp/os/Packages/x/xmms-skins-1.2.10-30.fc23.noarch.rpm
 rpm -ivh install ftp://ftp.icm.edu.pl/vol/rzm5/linux-rpmfusion/free/fedora/releases/22/Everything/x86_64/os/xmms-mp3-1.2.11-6.20071117cvs.fc22.x86_64.rpm 
@@ -18,6 +28,15 @@ dnf install youtube-dl
 #            2. Install tiddlyFox firefox plugin so that file-save feature is enabled. https://addons.mozilla.org/en-US/firefox/addon/tiddlyfox/
 
 # uif to iso image converter.
+dnf install openssl
+dnf install openssldnf install compat-openssl10
+dnf install compat-openssl10
+cd /usr/lib64
+ln -s libssl.so.1.0.2o libssl.so.1.0.0
+ln -s libcrypto.so.1.0.2o libcrypto.so.1.0.0
+rpm -ivh --nodeps ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/Kenzy:/packages/openSUSE_Tumbleweed/x86_64/uif2iso-0.1.4-3.1.x86_64.rpm
+
+[ deprecated ].
 wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/Kenzy:/packages/openSUSE_Tumbleweed/x86_64/uif2iso-0.1.4-3.1.x86_64.rpm
 rpm -ivh uif2iso-0.1.4-3.1.x86_64.rpm
 
@@ -56,16 +75,16 @@ dnf install mplayer-gui
 dnf install ftp://195.220.108.108/linux/dag/redhat/el7/en/x86_64/dag/RPMS/mplayer-skins-1.9-1.nodist.rf.noarch.rpm
 
 # Install facebook bluejeans rpm packages for video conference calls.
+# https://www.bluejeans.com/downloads
 dnf install bluejeans-1.37.19.x86_64.rpm 
 
 # Install pulse and audio control fine grained.
 dnf install pavucontrol
 
 # Skype for Linux.First Install dependencies.
+rpm -ivh https://go.skype.com/skypeforlinux-64.rpm
+
+[ deprecated ].
 # URL : http://wyldwulftech.blogspot.sg/2015/06/things-to-do-after-installing-fedora-22.html
 dnf install alsa-plugins-pulseaudio.i686 libQtCore.so.4 libQtDBus.so.4 libQtGui.so.4 libQtNetwork.so.4 libQtWebKit.so.4 libQtXml.so.4 libXss.so.1 libXv.so.1 qtwebkit
 rpm -ivh skype-4.3.0.37-fc16.i586.rpm
-
-# Install the tools for mounting cow2 file format.
-dnf install libguestfs-tools
-
