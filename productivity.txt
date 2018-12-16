@@ -118,3 +118,12 @@ dnf install filezilla
 
 # Install the tools required for the disk management. gparted.
 dnf install gparted-0.27.0-1.fc24.x86_64
+
+# Install the aescrypt for password encryption.
+cd /home/anand/Downloads/aescrypt/AESCrypt-master/Linux
+make
+make install [ as root ].
+
+# Install menu libre to add custom icons for missing apps.
+dnf install menulibre
+

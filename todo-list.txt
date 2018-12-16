@@ -1,0 +1,9 @@
+
+TODO LIST
+~~~~~~~~~~~~
+
+1. media wiki
+2. tiddlywiki [ difficult one ] -> no solution at present. 
+3. dot net core Linux.
+
+

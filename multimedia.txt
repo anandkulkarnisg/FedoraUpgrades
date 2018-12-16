@@ -88,3 +88,9 @@ rpm -ivh https://go.skype.com/skypeforlinux-64.rpm
 # URL : http://wyldwulftech.blogspot.sg/2015/06/things-to-do-after-installing-fedora-22.html
 dnf install alsa-plugins-pulseaudio.i686 libQtCore.so.4 libQtDBus.so.4 libQtGui.so.4 libQtNetwork.so.4 libQtWebKit.so.4 libQtXml.so.4 libXss.so.1 libXv.so.1 qtwebkit
 rpm -ivh skype-4.3.0.37-fc16.i586.rpm
+
+# Tux Paint installation.
+dnf install tuxpaint
+
+
+

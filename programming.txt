@@ -13,6 +13,8 @@ dnf debuginfo-install openssl-libs zlib
 dnf install boost
 dnf install boost-devel
 dnf install R
+dnf install julia
+dnf install scala
 
 # java related.
 dnf install icedtea-web
@@ -105,3 +107,8 @@ dnf install python-virtualenv
 
 # required for the 32 bit kdb/q binary.
 dnf install libnsl.i686
+
+# Install the eclipse C/C++ CDT Package.
+https://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/9.4/cdt-9.4.3/cdt-9.4.3.zip
+Install manually via the eclipse install new software menu option. restart after the same.
+
