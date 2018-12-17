@@ -33,3 +33,8 @@ dnf install vim gvim
 # Install emacs for Linux.
 dnf install emacs
 
+# Hack vim terminal editor with below ~/.vimrc file to enable sensible tab space [ default in fc28 is 8 which is ugly ].
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+

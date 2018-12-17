@@ -36,5 +36,7 @@ cd bin
 / --------------------------------------------------------------------- /
 
 # Installation of dot net core for Linux Latest.
-[ TODO  ]
-
+# https://dotnet.microsoft.com/download/linux-package-manager/fedora28/runtime-current
+# Install SDK and run time env via below.
+# https://dotnet.microsoft.com/download/linux-package-manager/fedora28/sdk-current
+# https://dotnet.microsoft.com/download/linux-package-manager/fedora28/runtime-current

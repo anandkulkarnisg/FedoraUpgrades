@@ -127,3 +127,5 @@ make install [ as root ].
 # Install menu libre to add custom icons for missing apps.
 dnf install menulibre
 
+# Install geogebra for study.
+rpm -ivh http://www.geogebra.net/linux/rpm/x86_64/geogebra5-5.0.516.0-659750.x86_64.rpm 
