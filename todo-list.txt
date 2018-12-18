@@ -6,3 +6,28 @@ TODO LIST
 2. tiddlywiki [ difficult one ] -> no solution at present. 
 
 
+
+Fixed issues below:-
+~~~~~~~~~~~~~~~~~~~~~~
+
+3. issues with xerces-c library building CppConfigManager
+ 
+[ [root@localhost CppConfigManager]# ./OtherStuff
+./OtherStuff: symbol lookup error: libCppConfigManager.so: undefined symbol: _ZNK11xercesc_3_213DTDEntityDecl14isSerializableEv
+[root@localhost CppConfigManager]# 
+
+fixes so far :-
+1. rpm -ivh https://rpmfind.net/linux/fedora/linux/releases/28/Everything/x86_64/os/Packages/c/compat-xerces-c31-3.1.4-1.fc28.x86_64.rpm
+2. Fixed with clean build of code. There was no issue. step 1 not needed. Just leaving package as is.
+
+
+4. C++ 17 Non Compliant builds in git:-
+~~~~~~~~~~~~~~~~~~
+
+drwxrwxrwx. 1 root root 4096 Dec 17 18:30 OrderBookMatcher
+drwxrwxrwx. 1 root root 8192 Dec 18 08:14 MessageThrottler
+
+updates:
+~~~~~~~~~~~
+- OrderBookMatcher - fixed.
+- MessageThrottler - Fixed with no cpp17 support due to library issues [ dynamic exception specification from log4cpp errors ].
