@@ -1,2 +1,37 @@
-# rpm fusion updates.
-rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+[root@localhost FedoraUpgrades]# dnf repolist
+Last metadata expiration check: 0:02:50 ago on Tue 18 Dec 2018 10:22:32 PM +08.
+repo id                                                                                        repo name                                                                                                     status
+code                                                                                           Visual Studio Code                                                                                                50
+*fedora                                                                                        Fedora 28 - x86_64                                                                                            57,327
+fedora-spotify                                                                                 negativo17 - Spotify                                                                                               3
+fedora-steam                                                                                   negativo17 - Steam                                                                                                 1
+geogebra                                                                                       geogebra                                                                                                          17
+google-chrome                                                                                  google-chrome                                                                                                      3
+packages-microsoft-com-prod                                                                    packages-microsoft-com-prod                                                                                       73
+*rpmfusion-free                                                                                RPM Fusion for Fedora 28 - Free                                                                                  563
+*rpmfusion-free-updates                                                                        RPM Fusion for Fedora 28 - Free - Updates                                                                        267
+skype-stable                                                                                   skype (stable)                                                                                                     5
+*updates                                                                                       Fedora 28 - x86_64 - Updates                                                                                  20,527
+[root@localhost FedoraUpgrades]# cat /etc/yum.repos.d/
+cat: /etc/yum.repos.d/: Is a directory
+[root@localhost FedoraUpgrades]# ls -lrt /etc/yum.repos.d/
+total 72
+-rwxrwxrwx. 1 root root  195 Apr 20  2018 microsoft-prod.repo
+-rw-r--r--. 1 root root 1324 Apr 24  2018 rpmfusion-free-updates-testing.repo
+-rw-r--r--. 1 root root 1264 Apr 24  2018 rpmfusion-free-updates.repo
+-rw-r--r--. 1 root root 1267 Apr 24  2018 rpmfusion-free.repo
+-rw-r--r--. 1 root root 1436 Aug 23 04:15 fedora-updates-testing.repo
+-rw-r--r--. 1 root root 1378 Aug 23 04:15 fedora-updates.repo
+-rw-r--r--. 1 root root 1331 Aug 23 04:15 fedora.repo
+-rw-r--r--. 1 root root  707 Aug 23 04:15 fedora-cisco-openh264.repo
+-rw-r--r--. 1 root root 1335 Oct 18 20:56 rpmfusion-nonfree-steam.repo
+-rw-r--r--. 1 root root 1431 Oct 18 20:56 rpmfusion-nonfree-nvidia-driver.repo
+-rw-r--r--. 1 root root  311 Oct 18 20:56 _copr_phracek-PyCharm.repo
+-rw-r--r--. 1 root root  173 Dec 14 16:59 google-chrome.repo
+-rw-r--r--. 1 root root  148 Dec 15 09:22 skype-stable.repo
+-rw-r--r--. 1 root root  568 Dec 15 13:44 fedora-steam.repo
+-rw-r--r--. 1 root root  580 Dec 15 15:52 fedora-spotify.repo
+-rw-r--r--. 1 root root   95 Dec 16 09:28 geogebra.repo
+-rw-r--r--. 1 root root  164 Dec 18 22:22 vscode.repo
+[root@localhost FedoraUpgrades]# 
+
