@@ -129,3 +129,26 @@ dnf install menulibre
 
 # Install geogebra for study.
 rpm -ivh http://www.geogebra.net/linux/rpm/x86_64/geogebra5-5.0.516.0-659750.x86_64.rpm 
+
+# Install docker for Fedora 28.
+dnf -y install dnf-plugins-core
+
+cat >/etc/yum.repos.d/docker-ce.repo<<EOF
+[docker-ce-stable]
+name=Docker CE Stable
+baseurl=https://download.docker.com/linux/fedora/28/x86_64/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/fedora/gpg
+EOF
+#Step 3: Install the latest Docker Engine on Fedora 29 / 28
+#Now that you have your repository ready, install the latest stable release of Docker on your machine by running:
+dnf -y install docker-ce
+#Enable it to start on boot:
+systemctl enable docker
+#Docker will be installed but not started. To start the docker service, run:
+systemctl start docker
+#The docker group is created, but no users are added to the group. Add your user to this group to run docker commands without sudo.
+usermod -aG docker $(whoami)
+
+
