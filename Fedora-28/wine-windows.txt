@@ -1,2 +1,2 @@
 dnf install wine
-# install npp , textpad , rufus, winMerge.
+# install npp , textpad , rufus, winMerge, winrar, 
