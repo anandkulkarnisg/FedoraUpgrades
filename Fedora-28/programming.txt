@@ -112,3 +112,10 @@ dnf install libnsl.i686
 https://www.eclipse.org/downloads/download.php?file=/tools/cdt/releases/9.4/cdt-9.4.3/cdt-9.4.3.zip
 Install manually via the eclipse install new software menu option. restart after the same.
 
+# Install netbeans IDE.
+wget https://www-us.apache.org/dist/incubator/netbeans/incubating-netbeans-java/incubating-9.0/incubating-netbeans-java-9.0-bin.zip
+cd /home/anand/localrepo/fedora/products/
+unzip incubating-netbeans-java-9.0-bin.zip
+mkdir -p netbeans-9.0
+ln -s netbeans-9.0 netbeans
+add the launcher to menulibre

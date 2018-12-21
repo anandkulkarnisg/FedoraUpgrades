@@ -151,4 +151,7 @@ systemctl start docker
 #The docker group is created, but no users are added to the group. Add your user to this group to run docker commands without sudo.
 usermod -aG docker $(whoami)
 
+# Firefox in browser text file browsing plugin.
+https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/
+
 
