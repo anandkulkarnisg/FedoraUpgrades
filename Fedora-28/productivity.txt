@@ -154,4 +154,25 @@ usermod -aG docker $(whoami)
 # Firefox in browser text file browsing plugin.
 https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/
 
+# HP Printer Installation.
+# /home/anand/localrepo/fedora/allsteps/installers/hp-b110-driver-linux
+#   989  dnf install hplip xane sane
+dnf install hplip xsane sane
+dnf install hplip
+which hp-setup
+hp-setup
+dnf install PyQt5 PyQt4
+hp-setup
+dnf install hplip-gui
+hp-setup
+exit
+hp-setup
+rpm -q python-qt5
+dnf install python-qt4
+dnf install python-qt5
+hp-setup -i
+
+
+
+
 

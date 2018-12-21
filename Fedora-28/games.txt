@@ -6,3 +6,6 @@ dnf install tuxpaint
 dnf config-manager --add-repo=http://negativo17.org/repos/fedora-steam.repo
 dnf install steam
 
+#SuperTux 2 game.
+#https://www.supertux.org/index.html
+dnf install supertux
