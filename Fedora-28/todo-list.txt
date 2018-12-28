@@ -2,7 +2,10 @@
 TODO LIST
 ~~~~~~~~~~~~
 
-1. media wiki
+1. media wiki -> installed. Need to work out backup solution.
 2. tiddlywiki [ difficult one ] -> no solution at present. 
-3. docker container image of FireFox 49 for Fedora 28 [ to enable tiddlyWiki saving and backward compatibility ].
+3. docker container image of FireFox 49 for Fedora 28 [ to enable tiddlyWiki saving and backward compatibility ]. ?
+
+
+
 

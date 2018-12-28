@@ -44,4 +44,11 @@ rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 dnf install sublime-text
 
+# Install atom IDE.
+# Article Source : https://tecadmin.net/install-atom-text-editor-on-fedora/
+wget https://atom.io/download/rpm -O atom.rpm
+sudo dnf localinstall atom.rpm
+mv atom.rpm /home/anand/localrepo/fedora/allsteps/rpmrepo/ideatom/
+
+
 

@@ -173,7 +173,10 @@ dnf install python-qt4
 dnf install python-qt5
 hp-setup -i
 
+# Install gnome Theme related items.
+dnf install chrome-gnome-shell
 
-
+# Install seahorse for generating gpg keys for signing/encryption of packages/communication.
+dnf install seahorse
 
 
