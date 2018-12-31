@@ -50,5 +50,10 @@ wget https://atom.io/download/rpm -O atom.rpm
 sudo dnf localinstall atom.rpm
 mv atom.rpm /home/anand/localrepo/fedora/allsteps/rpmrepo/ideatom/
 
+# Install squirrel client for Linux.
+# https://sourceforge.net/projects/squirrel-sql/
+
+
+
 
 

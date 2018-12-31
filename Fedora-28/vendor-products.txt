@@ -50,3 +50,58 @@ cd bin
 #dnf check-update
 #sudo dnf install code
 / --------------------------------------------------------------------- /
+
+MS SQL driver + squirrel client 
+
+###############################################################################################################
+https://lostechies.com/ericanderson/2009/08/31/up-and-running-and-squirrel-sql-and-sql-server-express-2005/
+###############################################################################################################
+Configuring the JDBC Driver in SQuirrel
+
+SQuirrel supports connections to any database that has a corresponding JDBC driver.  And, there are JDBC drivers available practically every major database as well as plenty of flat file formats.  For connecting to SQL Server, SQuirrel must be told where to find the Microsoft driver that was installed above.
+
+    Start SQuirrel SQL
+    Click on the “Drivers” tab on the left side
+    Either find the existing entry for the Microsoft JDBC driver or add a new one
+    Setup the example URL.  Since I am using Windows security, my example URL looks like this:
+        jdbc:sqlserver://localhost:8433;instanceName=SQLEXPRESS;integratedSecurity=true;databaseName=[catalog];
+    Click the “Extra Class Path” tab
+    Click the “Add” button
+    Navigate to and select the sqljdbc4.jar file in the installation directory of the Microsoft SQL Server JDBC Driver
+    Set the class name to com.microsoft.sqlserver.jdbc.SQLServerDriver
+    Click OK
+
+If you are using SQL Server Authentication or need other options, more detailed information can be found on the Microsoft web site for this driver.
+###############################################################################################################
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=57175
+
+###############################################################################################################
+
+connection port is : 1433
+
+[root@ldnpsr2937 squirrel]# netstat -tulpn | grep "mssql"
+[root@ldnpsr2937 squirrel]# netstat -tulpn | grep "sql"
+tcp        0      0 127.0.0.1:1431          0.0.0.0:*               LISTEN      3582/sqlservr       
+tcp        0      0 0.0.0.0:1433            0.0.0.0:*               LISTEN      3582/sqlservr       
+tcp        0      0 127.0.0.1:1434          0.0.0.0:*               LISTEN      3582/sqlservr       
+tcp6       0      0 :::3306                 :::*                    LISTEN      2378/mysqld         
+tcp6       0      0 ::1:1431                :::*                    LISTEN      3582/sqlservr       
+tcp6       0      0 :::1433                 :::*                    LISTEN      3582/sqlservr       
+tcp6       0      0 ::1:1434                :::*                    LISTEN      3582/sqlservr       
+[root@ldnpsr2937 squirrel]# netstat -tulpn | grep "8433"
+
+###############################################################################################################
+
+/ --------------------------------------------------------------------- /
+
+
+
+
+
+
+
+
+
+
+
