@@ -1,0 +1,2 @@
+1. Install ubuntu 16.0 LTS image on vmware workstation. This is useful to run firefox 51 with tiddlyfox support.
+   refer to tiddlywiki for more information on steps.

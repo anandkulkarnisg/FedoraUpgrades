@@ -119,3 +119,6 @@ unzip incubating-netbeans-java-9.0-bin.zip
 mkdir -p netbeans-9.0
 ln -s netbeans-9.0 netbeans
 add the launcher to menulibre
+
+# C and C++ system development tools.
+dnf group install "C Development Tools and Libraries"

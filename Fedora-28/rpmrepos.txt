@@ -12,14 +12,15 @@ packages-microsoft-com-prod                                                     
 *rpmfusion-free-updates                                                                        RPM Fusion for Fedora 28 - Free - Updates                                                                        267
 skype-stable                                                                                   skype (stable)                                                                                                     5
 *updates                                                                                       Fedora 28 - x86_64 - Updates                                                                                  20,527
-[root@localhost FedoraUpgrades]# cat /etc/yum.repos.d/
-cat: /etc/yum.repos.d/: Is a directory
-[root@localhost FedoraUpgrades]# ls -lrt /etc/yum.repos.d/
-total 72
+[anand@ldnpsr2937 Fedora-28]$ ls -lrt /etc/yum.repos.d/
+total 100
 -rwxrwxrwx. 1 root root  195 Apr 20  2018 microsoft-prod.repo
 -rw-r--r--. 1 root root 1324 Apr 24  2018 rpmfusion-free-updates-testing.repo
 -rw-r--r--. 1 root root 1264 Apr 24  2018 rpmfusion-free-updates.repo
 -rw-r--r--. 1 root root 1267 Apr 24  2018 rpmfusion-free.repo
+-rw-r--r--. 1 root root 1369 Apr 24  2018 rpmfusion-nonfree-updates-testing.repo
+-rw-r--r--. 1 root root 1309 Apr 24  2018 rpmfusion-nonfree-updates.repo
+-rw-r--r--. 1 root root 1312 Apr 24  2018 rpmfusion-nonfree.repo
 -rw-r--r--. 1 root root 1436 Aug 23 04:15 fedora-updates-testing.repo
 -rw-r--r--. 1 root root 1378 Aug 23 04:15 fedora-updates.repo
 -rw-r--r--. 1 root root 1331 Aug 23 04:15 fedora.repo
@@ -33,5 +34,8 @@ total 72
 -rw-r--r--. 1 root root  580 Dec 15 15:52 fedora-spotify.repo
 -rw-r--r--. 1 root root   95 Dec 16 09:28 geogebra.repo
 -rw-r--r--. 1 root root  164 Dec 18 22:22 vscode.repo
-[root@localhost FedoraUpgrades]# 
-
+-rw-r--r--. 1 root root  180 Dec 19 21:13 docker-ce.repo
+-rw-r--r--. 1 root root  192 Dec 21 17:02 sublime-text.repo
+-rw-r--r--. 1 root root  240 Dec 29 10:29 mssql-server-preview.repo
+-rw-r--r--. 1 root root  232 Dec 29 10:49 mssql-server-2017.repo
+[anand@ldnpsr2937 Fedora-28]$ 
