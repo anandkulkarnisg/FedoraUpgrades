@@ -122,3 +122,6 @@ add the launcher to menulibre
 
 # C and C++ system development tools.
 dnf group install "C Development Tools and Libraries"
+
+# Install the clang compiler support.
+dnf install clang
