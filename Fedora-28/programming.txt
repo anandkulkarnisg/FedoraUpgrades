@@ -72,6 +72,9 @@ pip install scrappy nltk pattern
 # basemap did not work.
 pip install seaborn bokeh basemap networkx
 
+# Additional libraries for network programming.
+pip install requests
+
 # Install the libtool required for building the aescrypt tool.
 dnf install libtool
 

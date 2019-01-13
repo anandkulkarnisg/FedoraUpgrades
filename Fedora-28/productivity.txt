@@ -179,4 +179,6 @@ dnf install chrome-gnome-shell
 # Install seahorse for generating gpg keys for signing/encryption of packages/communication.
 dnf install seahorse
 
-
+# Trace the progress of terminal data intensive applications via pv.
+# http://rpmfind.net/linux/RPM/fedora/27/i386/p/pv-1.6.6-3.fc27.i686.html
+rpm -ivh pv-1.6.6-3.fc27.i686.rpm
