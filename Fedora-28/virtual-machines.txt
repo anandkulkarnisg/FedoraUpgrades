@@ -1,2 +1,9 @@
 1. Install ubuntu 16.0 LTS image on vmware workstation. This is useful to run firefox 51 with tiddlyfox support.
    refer to tiddlywiki for more information on steps.
+   
+2. Install ubuntu 18.0.4 LTS for latest ubuntu to play around [ nothing critical on this machine ].
+
+3. Install Fedora 28 same OS as the one on external HDD in VM to keep track of upgrades and possible upgrade 
+   frontline tests to detect breakdowns.   
+
+Note : Backup All three machines in Cloud.
