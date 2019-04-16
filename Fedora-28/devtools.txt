@@ -6,7 +6,8 @@ dnf install svn
 dnf install mod_dav_svn
 
 # git packages.
-dnf install github
+# dnf install github [ wrong entry ]
+dnf install git
 
 # rlwrap utility.
 dnf install rlwrap
