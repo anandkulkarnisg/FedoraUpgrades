@@ -127,7 +127,10 @@ dnf install filezilla
 dnf install gparted-0.27.0-1.fc24.x86_64
 
 # Install the aescrypt for password encryption.
-cd /home/anand/Downloads/aescrypt/AESCrypt-master/Linux
+# source url : https://www.aescrypt.com/download/ [ First download is 64 bit GUI and second one is console tool ].
+# only command line tool works.
+wget https://www.aescrypt.com/download/v3/linux/AESCrypt-GUI-3.11-Linux-x86_64-Install.gz
+wget https://www.aescrypt.com/download/v3/linux/aescrypt-3.14.tgz 
 make
 make install [ as root ].
 
