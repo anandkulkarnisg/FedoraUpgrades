@@ -56,6 +56,9 @@ dnf install tilix
 # Install the basci xterm terminal emulator.
 dnf install xterm
 
+# Install drop down terminal emulator for KDE.
+dnf install yakuake
+
 # Install the LilyTerm emulator.
 dnf install lilyterm
 
