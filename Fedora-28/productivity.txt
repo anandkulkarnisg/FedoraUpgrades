@@ -28,7 +28,8 @@ rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 dnf install flash-plugin
 
 # opera browser.
-rpm -ivh opera-12.16-1860.x86_64.rpm
+wget https://download3.operacdn.com/pub/opera/desktop/60.0.3255.56/linux/opera-stable_60.0.3255.56_amd64.rpm
+dnf localinstall opera-stable_60.0.3255.56_amd64.rpm
 
 # Install dosbox for good old video games.
 dnf install dosbox
