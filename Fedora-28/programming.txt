@@ -26,8 +26,7 @@ dnf install codeblocks
 dnf install rlwrap
 
 # Install the R studio for desktop package.
-wget "https://download1.rstudio.org/rstudio-0.99.902-x86_64.rpm"
-rpm -ivh rstudio-0.99.902-x86_64.rpm
+wget https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64.rpm
 
 # Install korn shell.
 dnf install ksh
