@@ -74,8 +74,8 @@ dnf install gftp
 dnf install mediawiki
 
 # Install the wikimedia related packages.
-dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl
-dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl
+# dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl [ depercated as this does not work and most of updated installations are already present ].
+
 dnf install bison
 dnf install mariadb
 dnf install mailcap
