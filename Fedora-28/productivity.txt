@@ -139,7 +139,7 @@ dnf install menulibre
 
 # Install geogebra for study.
 sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key
-rpm -ivh http://www.geogebra.net/linux/rpm/x86_64/geogebra5-5.0.516.0-659750.x86_64.rpm 
+rpm -ivh http://www.geogebra.net/linux/rpm/x86_64/geogebra5-5.0.533.0-677810.x86_64.rpm
 
 # Install docker for Fedora 28.
 dnf -y install dnf-plugins-core
@@ -191,4 +191,5 @@ dnf install seahorse
 
 # Trace the progress of terminal data intensive applications via pv.
 # http://rpmfind.net/linux/RPM/fedora/27/i386/p/pv-1.6.6-3.fc27.i686.html
-rpm -ivh pv-1.6.6-3.fc27.i686.rpm
+# rpm -ivh pv-1.6.6-3.fc27.i686.rpm [ deprecated ].
+dnf install pv
