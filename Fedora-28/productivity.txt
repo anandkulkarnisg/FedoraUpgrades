@@ -93,7 +93,9 @@ dnf install spotify-client
 dnf install pidgin
 
 # Install the VirtualBox software.
-dnf install VirtualBox
+# dnf install VirtualBox [ deprecated and wrong steps, correct steps below ].
+wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -P /etc/yum.repos.d/
+dnf install VirtualBox-6.0
 
 # Install keepassx
 dnf install keepassx
