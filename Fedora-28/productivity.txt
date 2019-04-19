@@ -96,6 +96,9 @@ dnf install pidgin
 # dnf install VirtualBox [ deprecated and wrong steps, correct steps below ].
 wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -P /etc/yum.repos.d/
 dnf install VirtualBox-6.0
+# requires development tools and kernel headers etc packages.
+dnf install -y @development-tools
+dnf install -y kernel-devel kernel-headers dkms qt5-qtx11extras  elfutils-libelf-devel zlib-devel
 
 # Install keepassx
 dnf install keepassx
