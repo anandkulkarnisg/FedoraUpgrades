@@ -49,8 +49,9 @@ dnf install switchdesk-gui
 dnf install alien
 
 # Install the terminal emulator.
-dnf copr enable heikoada/terminix
-sudo dnf install terminix
+#dnf copr enable heikoada/terminix [ deprecated FC26 onwards simply install tilix, this repo does not exist anymore ]
+#sudo dnf install terminix 
+dnf install tilix
 
 # Install the LilyTerm emulator.
 dnf install lilyterm
