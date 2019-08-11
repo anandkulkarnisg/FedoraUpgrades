@@ -1,30 +1,32 @@
-total 8
-drwxr-xr-x. 2 anand anand 4096 May  1 22:07 Desktop
+total 4
 drwxrwxr-x. 3 anand anand 4096 May  4 08:08 workspace
 lrwxrwxrwx. 1 anand anand   29 May  4 17:32 tools -> localrepo/coderepo/git/tools/
 lrwxrwxrwx. 1 anand anand   23 May  4 17:33 git -> localrepo/coderepo/git/
 lrwxrwxrwx. 1 anand anand   29 May  4 17:33 bitbucket -> localrepo/coderepo/bitbucket/
 lrwxrwxrwx. 1 anand anand   10 May  4 17:42 repo -> localrepo/
-lrwxrwxrwx. 1 anand anand   35 May  4 17:52 Downloads -> localrepo/fedora/desktop/Downloads/
-lrwxrwxrwx. 1 anand anand   35 May  4 17:52 Documents -> localrepo/fedora/desktop/Documents/
-lrwxrwxrwx. 1 anand anand   35 May  4 17:53 Templates -> localrepo/fedora/desktop/Templates/
-lrwxrwxrwx. 1 anand anand   32 May  4 17:53 Public -> localrepo/fedora/desktop/Public/
-lrwxrwxrwx. 1 anand anand   32 May  4 17:54 Videos -> localrepo/fedora/desktop/Videos/
-lrwxrwxrwx. 1 anand anand   34 May  4 17:54 Pictures -> localrepo/fedora/desktop/Pictures/
-lrwxrwxrwx. 1 anand anand   31 May  4 17:54 Music -> localrepo/fedora/desktop/Music/
-lrwxrwxrwx. 1 anand anand   24 May  4 18:22 coding -> localrepo/fedora/coding/
-lrwxrwxrwx. 1 anand anand   24 May  4 21:55 vmware -> localrepo/fedora/vmware/
-lrwxrwxrwx. 1 anand anand   39 May  4 21:55 largeCppTestDataFiles -> localrepo/fedora/largeCppTestDataFiles/
-lrwxrwxrwx. 1 anand anand   30 May  4 21:56 IDE-Projects -> localrepo/fedora/IDE-Projects/
-lrwxrwxrwx. 1 anand anand   27 May  4 21:56 CLionProjects -> IDE-Projects/CLionProjects/
-lrwxrwxrwx. 1 anand anand   24 May  4 21:56 CodeBlocks -> IDE-Projects/CodeBlocks/
-lrwxrwxrwx. 1 anand anand   21 May  4 21:56 eclipse -> IDE-Projects/eclipse/
-lrwxrwxrwx. 1 anand anand   30 May  4 21:57 NetBeansProjects -> IDE-Projects/NetBeansProjects/
-lrwxrwxrwx. 1 anand anand   29 May  4 21:57 PycharmProjects -> IDE-Projects/PycharmProjects/
 lrwxrwxrwx. 1 anand anand   39 May  4 22:01 localrepo -> /run/media/anand/windows/os-common/repo
 lrwxrwxrwx. 1 anand anand   14 May  4 22:03 temp -> bitbucket/temp
-lrwxrwxrwx. 1 anand anand   29 May  4 22:03 tempcoding -> localrepo/fedora/coding/temp/
-lrwxrwxrwx. 1 anand anand   15 May  5 07:25 runq5000 -> coding/runq5000
-lrwxrwxrwx. 1 anand anand   15 May  5 07:26 runq5001 -> coding/runq5001
-lrwxrwxrwx. 1 anand anand   17 May  5 07:26 runq645002 -> coding/runq645002
-lrwxrwxrwx. 1 anand anand   17 May  5 07:26 runq645003 -> coding/runq645003
+lrwxrwxrwx. 1 anand anand   47 May  5 09:13 Downloads -> localrepo/fedora/users/anand/desktop/Downloads/
+lrwxrwxrwx. 1 anand anand   47 May  5 09:13 Documents -> localrepo/fedora/users/anand/desktop/Documents/
+lrwxrwxrwx. 1 anand anand   47 May  5 09:13 Templates -> localrepo/fedora/users/anand/desktop/Templates/
+lrwxrwxrwx. 1 anand anand   43 May  5 09:13 Public -> localrepo/fedora/users/anand/desktop/Public
+lrwxrwxrwx. 1 anand anand   43 May  5 09:13 Videos -> localrepo/fedora/users/anand/desktop/Videos
+lrwxrwxrwx. 1 anand anand   45 May  5 09:13 Pictures -> localrepo/fedora/users/anand/desktop/Pictures
+lrwxrwxrwx. 1 anand anand   42 May  5 09:14 Music -> localrepo/fedora/users/anand/desktop/Music
+lrwxrwxrwx. 1 anand anand   35 May  5 09:14 coding -> localrepo/fedora/users/anand/coding
+lrwxrwxrwx. 1 anand anand   35 May  5 09:14 vmware -> localrepo/fedora/users/anand/vmware
+lrwxrwxrwx. 1 anand anand   51 May  5 09:14 largeCppTestDataFiles -> localrepo/fedora/users/anand/largeCppTestDataFiles/
+lrwxrwxrwx. 1 anand anand   41 May  5 09:15 IDE-Projects -> localrepo/fedora/users/anand/IDE-Projects
+lrwxrwxrwx. 1 anand anand   55 May  5 09:15 CLionProjects -> localrepo/fedora/users/anand/IDE-Projects/CLionProjects
+lrwxrwxrwx. 1 anand anand   49 May  5 09:15 eclipse -> localrepo/fedora/users/anand/IDE-Projects/eclipse
+lrwxrwxrwx. 1 anand anand   52 May  5 09:15 CodeBlocks -> localrepo/fedora/users/anand/IDE-Projects/CodeBlocks
+lrwxrwxrwx. 1 anand anand   58 May  5 09:16 NetBeansProjects -> localrepo/fedora/users/anand/IDE-Projects/NetBeansProjects
+lrwxrwxrwx. 1 anand anand   57 May  5 09:16 PycharmProjects -> localrepo/fedora/users/anand/IDE-Projects/PycharmProjects
+lrwxrwxrwx. 1 anand anand   41 May  5 09:16 codingtemp -> localrepo/fedora/users/anand/coding/temp/
+lrwxrwxrwx. 1 anand anand   15 May  5 09:17 runq5000 -> coding/runq5000
+lrwxrwxrwx. 1 anand anand   15 May  5 09:17 runq5001 -> coding/runq5001
+lrwxrwxrwx. 1 anand anand   17 May  5 09:17 runq645002 -> coding/runq645002
+lrwxrwxrwx. 1 anand anand   17 May  5 09:17 runq645003 -> coding/runq645003
+lrwxrwxrwx. 1 anand anand   13 May 24 20:40 runqat -> coding/runqat
+lrwxrwxrwx. 1 anand anand   48 Jul 24 21:48 ExpanDrive -> localrepo/fedora/users/anand/desktop/ExpanDrive/
+lrwxrwxrwx. 1 anand anand   54 Aug  4 17:12 Dropbox -> localrepo/fedora/users/anand/desktop/Documents/Dropbox
