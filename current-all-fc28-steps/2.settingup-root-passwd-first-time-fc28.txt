@@ -1,0 +1,21 @@
+
+Article source url : https://www.cyberciti.biz/faq/change-root-password-on-fedora-linux/
+
+Article steps below :
+
+[anand@localhost all-fc28-steps]$ sudo passwd root
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+[sudo] password for anand: 
+Changing password for user root.
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[anand@localhost all-fc28-steps]$ 
+

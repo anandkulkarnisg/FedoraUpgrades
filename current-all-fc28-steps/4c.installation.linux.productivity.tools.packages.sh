@@ -1,0 +1,227 @@
+#!/bin/bash
+
+dnf install @xfce-desktop
+dnf install @kde-desktop
+dnf install xpdf
+dnf install qbittorrent
+dnf install terminator
+dnf install gnome-tweak-tool
+
+# lsb and are needed by google chrome browser.
+dnf install lsb
+dnf install libXScrnSaver
+dnf install liberation-fonts
+dnf install libappindicator-gtk3
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+rpm -ivh google-chrome-stable_current_x86_64.rpm
+
+# Adobe reader.
+wget http://ardownload.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i486linux_enu.rpm
+dnf install atk.i686 pangox-compat pangox-compat.i686 gdk-pixbuf2.i686 gtk2.i686 libidn.i686 libXt.i686 gdk-pixbuf2-xlib gdk-pixbuf2-xlib.i686 mesa-libGLU mesa-libGLU.i686
+dnf localinstall AdbeRdr9.5.5-1_i486linux_enu.rpm
+dnf install libcanberra-gtk2.i686 adwaita-gtk2-theme.i686 PackageKit-gtk3-module.i686
+
+# manage and transform pdf files.
+dnf install pdfmod
+
+# Adobe Flash player plugin for browsers.
+rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+dnf install flash-plugin
+
+# opera browser.
+wget https://download3.operacdn.com/pub/opera/desktop/60.0.3255.56/linux/opera-stable_60.0.3255.56_amd64.rpm
+dnf localinstall opera-stable_60.0.3255.56_amd64.rpm
+
+# Install dosbox for good old video games.
+dnf install dosbox
+
+# Install livecd and image handling utilities.
+dnf install livecd-tools
+dnf install liveusb-creator
+
+# Install glade package and switchdesk GUI.
+dnf install glade
+dnf install glade3
+dnf install  pygtk2-libglade
+dnf install switchdesk
+dnf install switchdesk-gui
+
+# Install alien package for other formats to rpm conversion.
+dnf install alien
+
+# Install the terminal emulator.
+#dnf copr enable heikoada/terminix [ deprecated FC26 onwards simply install tilix, this repo does not exist anymore ]
+#sudo dnf install terminix 
+dnf install tilix
+
+# Install the basci xterm terminal emulator.
+dnf install xterm
+
+# Install drop down terminal emulator for KDE.
+dnf install yakuake
+
+# Install the LilyTerm emulator.
+dnf install lilyterm
+
+# chromium browser.
+dnf install chromium
+
+#http://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/
+dnf install shellinabox
+
+# Install ROXTerm
+dnf install roxterm
+
+# Install GUI FTP Client.
+dnf install gftp
+
+# Install the firefox plugin that enables ssh terminal in a tab.
+
+# Install the mediaWiki to build you own local wiki. [ TODO ]
+dnf install mediawiki
+
+# Install the wikimedia related packages.
+# dnf install -y httpd mysql-server php php-pear php-xml php-mysql php-intl php-pecl-zendopcache php-gd php-mbstring ImageMagick-perl [ depercated as this does not work and most of updated installations are already present ].
+
+dnf install bison
+dnf install mariadb
+dnf install mailcap
+dnf install mysql-server
+dnf install mysql
+dnf install php-mysqlnd
+dnf install -y mod_ssl
+
+# Spotify
+# https://negativo17.org/spotify-client/
+dnf config-manager --add-repo=https://negativo17.org/repos/fedora-spotify.repo
+dnf install spotify-client
+
+# Install the pidgin
+dnf install pidgin
+
+# Install the VirtualBox software.
+# dnf install VirtualBox [ deprecated and wrong steps, correct steps below ].
+wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo -P /etc/yum.repos.d/
+dnf install VirtualBox-6.0
+# requires development tools and kernel headers etc packages.
+dnf install -y @development-tools
+dnf install -y kernel-devel kernel-headers dkms qt5-qtx11extras  elfutils-libelf-devel zlib-devel
+
+# Install keepassx
+dnf install keepassx
+
+# stopwatch utility.
+dnf install sugar-stopwatch
+
+# News server client for GNOME desktop.
+dnf install pan
+
+# Install 7zip for Linux.
+dnf install p7zip
+
+# Install the mozilla plugin for the grammly [ spell checker unpaid free version ].
+
+# Install the pdf shuffler tool for editing and sorting out PDF files.
+dnf install pdfshuffler
+
+# Install shutter to take good quality screenshots.
+dnf install shutter
+
+# FileZilla utility.
+dnf install filezilla
+
+# Install the tools required for the disk management. gparted.
+dnf install gparted-0.27.0-1.fc24.x86_64
+
+# Install the aescrypt for password encryption.
+# source url : https://www.aescrypt.com/download/ [ First download is 64 bit GUI and second one is console tool ].
+# only command line tool works.
+wget https://www.aescrypt.com/download/v3/linux/AESCrypt-GUI-3.11-Linux-x86_64-Install.gz
+wget https://www.aescrypt.com/download/v3/linux/aescrypt-3.14.tgz 
+make
+make install [ as root ].
+
+# Install menu libre to add custom icons for missing apps.
+dnf install menulibre
+
+# Install geogebra for study.
+sudo rpm --import https://static.geogebra.org/linux/office@geogebra.org.gpg.key
+rpm -ivh http://www.geogebra.net/linux/rpm/x86_64/geogebra5-5.0.533.0-677810.x86_64.rpm
+
+# Install docker for Fedora 28.
+dnf -y install dnf-plugins-core
+
+cat >/etc/yum.repos.d/docker-ce.repo<<EOF
+[docker-ce-stable]
+name=Docker CE Stable
+baseurl=https://download.docker.com/linux/fedora/28/x86_64/stable
+enabled=1
+gpgcheck=1
+gpgkey=https://download.docker.com/linux/fedora/gpg
+EOF
+#Step 3: Install the latest Docker Engine on Fedora 29 / 28
+#Now that you have your repository ready, install the latest stable release of Docker on your machine by running:
+dnf -y install docker-ce
+#Enable it to start on boot:
+systemctl enable docker
+#Docker will be installed but not started. To start the docker service, run:
+systemctl start docker
+#The docker group is created, but no users are added to the group. Add your user to this group to run docker commands without sudo.
+usermod -aG docker $(whoami)
+
+# Firefox in browser text file browsing plugin.
+https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/
+
+# HP Printer Installation.
+# /home/anand/localrepo/fedora/allsteps/installers/hp-b110-driver-linux
+#   989  dnf install hplip xane sane
+dnf install hplip xsane sane
+dnf install hplip
+which hp-setup
+hp-setup
+dnf install PyQt5 PyQt4
+hp-setup
+dnf install hplip-gui
+hp-setup
+exit
+hp-setup
+rpm -q python-qt5
+dnf install python-qt4
+dnf install python-qt5
+hp-setup -i
+
+# Install gnome Theme related items.
+dnf install chrome-gnome-shell
+
+# Install seahorse for generating gpg keys for signing/encryption of packages/communication.
+dnf install seahorse
+
+# Trace the progress of terminal data intensive applications via pv.
+# http://rpmfind.net/linux/RPM/fedora/27/i386/p/pv-1.6.6-3.fc27.i686.html
+# rpm -ivh pv-1.6.6-3.fc27.i686.rpm [ deprecated ].
+dnf install pv
+
+# Install the dropbox client for Linux.
+dnf install -y dropbox
+
+# Install hard disk smart checking tools.
+dnf install -y smartmontools
+
+# Install disk burning software for kde desktop.
+dnf install -y k3b
+
+# Install the gnome taskbar tool software per user from the software repository.
+# github link and rest of details are in the screenshot.
+# https://github.com/zpydr/
+
+# Install the oneDrive client for Linux.
+# Source : https://www.expandrive.com/download-expandrive/
+wget https://packages.expandrive.com/rpm/ExpanDrive-7.0.17.x86_64.rpm
+rpm -ivvh ExpanDrive-7.0.17.x86_64.rpm
+
+# Install vnc client connectivity client for remote desktops.
+dnf install vinagre
+
+# Install selinux troubleshooter gui which helps study violations and helps generate policies.
+dnf install setroubleshoot
