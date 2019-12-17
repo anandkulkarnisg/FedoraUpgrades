@@ -225,3 +225,9 @@ dnf install vinagre
 
 # Install selinux troubleshooter gui which helps study violations and helps generate policies.
 dnf install setroubleshoot
+
+# Install epub book reader.
+dnf install calibre
+
+# Install blivet-gui which is used for LVM management on lvm disks. GUI Interface.
+dnf install blivet-gui
