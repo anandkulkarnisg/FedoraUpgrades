@@ -231,3 +231,10 @@ dnf install calibre
 
 # Install blivet-gui which is used for LVM management on lvm disks. GUI Interface.
 dnf install blivet-gui
+
+# Install the bitlocker encryption software used for mounting windows drives.
+dnf install dislocker
+
+# Additional bitLocker GUI installation windows/UI interface in python.
+# wget https://raw.githubusercontent.com/soachishti/dislocker-gui/master/main.py
+# python3 main.py
