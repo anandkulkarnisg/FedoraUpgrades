@@ -238,3 +238,7 @@ dnf install dislocker
 # Additional bitLocker GUI installation windows/UI interface in python.
 # wget https://raw.githubusercontent.com/soachishti/dislocker-gui/master/main.py
 # python3 main.py
+
+# Install sysstats tool.
+dnf install -y sysstat
+
